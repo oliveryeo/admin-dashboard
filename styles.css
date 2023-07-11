@@ -22,7 +22,7 @@ html, body, .container {
     display: grid;
     align-content: start;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 30px;
 }
 
 .tabs-1, .tabs-2 {
@@ -30,6 +30,11 @@ html, body, .container {
     gap: 5px;
 }
 
-.tabs-1 > div, .tabs-2 > div {
+.title > div, .tabs-1 > div, .tabs-2 > div {
     display: flex;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
 }
