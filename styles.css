@@ -2,3 +2,17 @@
     margin: 0;
     padding: 0;
 }
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+    background-color: #4590CF;
+    grid-row: 1 / 3;
+}
