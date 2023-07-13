@@ -38,3 +38,9 @@ html, body, .container {
 .title {
     font-size: 2rem;
 }
+
+.header {
+    background-color: rgb(255,255,255);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
