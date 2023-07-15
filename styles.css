@@ -10,6 +10,11 @@ html, body, .container {
     height: 100%;
 }
 
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 20rem 3fr;
@@ -23,16 +28,23 @@ html, body, .container {
     align-content: start;
     gap: 50px;
     padding: 20px 30px;
+    color: white;
+}
+
+.sidebar .icon {
+    filter: invert(99%) sepia(1%) saturate(446%) hue-rotate(165deg) brightness(119%) contrast(100%)
 }
 
 .tabs-1, .tabs-2 {
     display: grid;
-    gap: 5px;
+    gap: 20px;
 }
 
 .title > div, .tabs-1 > div, .tabs-2 > div {
     display: flex;
     font-size: 1.5rem;
+    align-items: center;
+    gap: 20px;
 }
 
 .title {
