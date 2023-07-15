@@ -27,7 +27,7 @@ html, body, .container {
     display: grid;
     align-content: start;
     gap: 50px;
-    padding: 20px 30px;
+    padding: 20px;
     color: white;
 }
 
@@ -35,20 +35,29 @@ html, body, .container {
     filter: invert(99%) sepia(1%) saturate(446%) hue-rotate(165deg) brightness(119%) contrast(100%)
 }
 
+.title {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    gap: 10px;
+}
+
+.title .icon {
+    width: 3rem;
+    height: 3rem;
+}
+
 .tabs-1, .tabs-2 {
     display: grid;
     gap: 20px;
+    padding-left: 10px;
 }
 
-.title > div, .tabs-1 > div, .tabs-2 > div {
+.tabs-1 > div, .tabs-2 > div {
     display: flex;
     font-size: 1.5rem;
     align-items: center;
     gap: 20px;
-}
-
-.title {
-    font-size: 2rem;
 }
 
 .header {
