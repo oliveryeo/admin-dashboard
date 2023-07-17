@@ -96,6 +96,7 @@ html, body, .container {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 20px;
     padding-right: 20px;
 }
@@ -109,4 +110,41 @@ html, body, .container {
 
 .profile-name {
 
+}
+
+.greeting {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo-2 {
+    min-height: 5rem;
+    min-width: 5rem;
+    background-color: grey;
+    border-radius: 5rem;
+}
+
+.message > div:nth-child(2){
+    font-size: 1.5rem;
+}
+
+.header-2-buttons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.header-2-buttons > div {
+    min-height: 2rem;
+    min-width: 5.5rem;
+    border-radius: 3rem;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
