@@ -173,4 +173,6 @@ html, body, .container {
 
 .project-grid {
     background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
 }
