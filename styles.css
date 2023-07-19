@@ -148,3 +148,29 @@ html, body, .container {
     align-items: center;
     justify-content: center;
 }
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 2rem 1rem;
+    background-color: lightgrey;
+}
+
+.project-section {
+    grid-row: 1 / 3;
+}
+
+.project-section > div:first-child { /* Select project section title*/
+    font-size: large;
+}
+
+.project-all-grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-grid {
+    background-color: white;
+}
