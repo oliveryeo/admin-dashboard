@@ -159,10 +159,13 @@ html, body, .container {
 
 .project-section {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 2.5rem;
 }
 
 .project-section > div:first-child { /* Select project section title*/
-    font-size: large;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 .project-all-grids {
@@ -172,7 +175,31 @@ html, body, .container {
 }
 
 .project-grid {
+    display: grid;
+    align-items: start;
     background-color: white;
     padding: 30px 20px;
     border-radius: 10px;
+    border-left: 10px solid orange; /* Sets the left side of the project grid orange*/
+}
+
+.project-content {
+    display: grid;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    color: grey;
+}
+
+.project-functions {
+    align-self: end;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
 }
