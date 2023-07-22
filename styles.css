@@ -163,7 +163,9 @@ html, body, .container {
     grid-template-rows: 2.5rem;
 }
 
-.project-section > div:first-child { /* Select project section title*/
+.project-section > div:first-child,
+.announcements > div:first-child,
+.trending > div:first-child { /* Select project section title*/
     font-size: 1.5rem;
     font-weight: bolder;
 }
