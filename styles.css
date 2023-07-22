@@ -18,11 +18,11 @@ html, body, .container {
 .container {
     display: grid;
     grid-template-columns: 20rem 3fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
-    background-color: rgb(69, 144, 207);
+    background-color: rgb(61, 133, 192);
     grid-row: 1 / 3;
     display: grid;
     align-content: start;
@@ -151,10 +151,10 @@ html, body, .container {
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
     padding: 2rem 1rem;
-    background-color: lightgrey;
+    background-color: rgb(227, 232, 239);
 }
 
 .project-section {
@@ -183,6 +183,7 @@ html, body, .container {
     padding: 30px 20px;
     border-radius: 10px;
     border-left: 10px solid orange; /* Sets the left side of the project grid orange*/
+    box-shadow: 2px 3px 5px 0px rgb(201, 201, 201);
 }
 
 .project-content {
@@ -204,4 +205,18 @@ html, body, .container {
     display: flex;
     gap: 20px;
     justify-content: flex-end;
+}
+
+.announcements, .trending {
+    display: grid;
+    grid-template-rows: 2.5rem;
+}
+
+.announcement-grids, .trending-grids {
+    display: grid;
+    align-items: start;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 0px rgb(201, 201, 201);
 }
