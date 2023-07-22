@@ -152,6 +152,7 @@ html, body, .container {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     padding: 2rem 1rem;
     background-color: rgb(227, 232, 239);
@@ -164,8 +165,8 @@ html, body, .container {
 }
 
 .project-section > div:first-child,
-.announcements > div:first-child,
-.trending > div:first-child { /* Select project section title*/
+.announcement-section > div:first-child,
+.trending-section > div:first-child { /* Select project section title*/
     font-size: 1.5rem;
     font-weight: bolder;
 }
@@ -207,16 +208,33 @@ html, body, .container {
     justify-content: flex-end;
 }
 
-.announcements, .trending {
+.announcement-section, .trending-section {
     display: grid;
     grid-template-rows: 2.5rem;
 }
 
-.announcement-grids, .trending-grids {
+.announcement-all-grids, .trending-all-grids {
     display: grid;
-    align-items: start;
     background-color: white;
-    padding: 30px 20px;
+    padding: 0px 20px;
     border-radius: 10px;
     box-shadow: 2px 3px 5px 0px rgb(201, 201, 201);
+}
+
+.announcement-all-grids > .announcement:not(:last-child) { /* Select all div child except last*/
+    border-bottom: 1px solid rgba(128,128,128, 0.5); /* rgba to set opacity of line */
+}
+
+.announcement {
+    display: grid;
+    align-content: center;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.announcement-content {
+    font-size: 0.8rem;
+    color: grey;
 }
