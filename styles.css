@@ -73,7 +73,11 @@ html, body, .container {
 .header-1, .header-2 {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: white;
+}
+
+.header-2 {
+    padding: 0px 30px;
 }
 
 .searchbar {
